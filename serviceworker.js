@@ -1,14 +1,18 @@
 // A simple service worker for caching the site
+
 const CACHE_NAME = 'medhasya-cache-v1';
+
+// Use relative paths, removing the leading '/'
+
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/about.html',
-  '/courses.html',
-  '/faculty.html',
-  '/gallery.html',
-  '/contact.html',
-  '/css/style.css',
+  './',
+  'index.html',
+  'about.html',
+  'courses.html',
+  'faculty.html',
+  'gallery.html',
+  'contact.html',
+  'css/style.css',
   'https://cdn.tailwindcss.com'
 ];
 
