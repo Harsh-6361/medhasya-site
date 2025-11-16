@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Medhasya Academy</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+        // Custom Tailwind configuration
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-dark': '#0F172A',
+                        'brand-blue': '#2563EB',
+                        'brand-gold': '#FACC15',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Anchor for Scroll-to-Top -->
+    <a id="top"></a>
+
+    <!-- Header -->
+    <header class="bg-white/95 sticky top-0 z-50 shadow-sm backdrop-blur-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-brand-dark">Medhasya Academy</a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-brand-blue transition-colors">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-brand-blue transition-colors">About Us</a>
+                <a href="courses.html" class="text-gray-600 hover:text-brand-blue transition-colors">Courses</a>
+                <a href="faculty.html" class="text-gray-600 hover:text-brand-blue transition-colors">Our Faculty</a>
+                <a href="gallery.html" class="text-gray-900 font-semibold hover:text-brand-blue transition-colors">Gallery</a>
+                <a href="contact.html" class="bg-brand-blue text-white px-5 py-2.5 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+                    Inquire Now
+                </a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-900 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <a href="index.html" class="block px-6 py-3 text-gray-600 hover:bg-gray-50">Home</a>
+            <a href="about.html" class="block px-6 py-3 text-gray-600 hover:bg-gray-50">About Us</a>
+            <a href="courses.html" class="block px-6 py-3 text-gray-600 hover:bg-gray-50">Courses</a>
+            <a href="faculty.html" class="block px-6 py-3 text-gray-600 hover:bg-gray-50">Our Faculty</a>
+            <a href="gallery.html" class="block px-6 py-3 text-gray-900 font-semibold hover:bg-gray-50">Gallery</a>
+            <a href="contact.html" class="block px-6 py-4 m-4 bg-brand-blue text-white text-center rounded-lg font-medium hover:bg-blue-700">Inquire Now</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="bg-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-brand-dark">Our Gallery</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mt-4">
+                    A glimpse into our learning environment, student interactions, and proud moments.
+                </p>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Image 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="https://placehold.co/600x400/eeeeee/333333?text=Classroom" alt="Modern Classroom" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <p class="text-gray-600">Our interactive classroom setup.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Mentoring" alt="One-to-one mentoring" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <p class="text-gray-600">Personalized mentoring session.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="https://placehold.co/600x400/eeeeee/333333?text=Students" alt="Happy Students" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <p class="text-gray-600">Students engaged in a group discussion.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 4 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="https://placehold.co/600x400/eeeeee/333333?text=Award" alt="Student Award" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <p class="text-gray-600">Celebrating our top performers.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 5 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Seminar" alt="Seminar" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <p class="text-gray-600">Special guest lecture on exam strategies.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Image 6 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                        <img src="https://placehold.co/600x400/eeeeee/333333?text=Library" alt="Library" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <p class="text-gray-600">Our quiet study and resource area.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-gray-400 pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                
+                <!-- Column 1: Get in Touch -->
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-6">Get In Touch</h3>
+                    <p class="flex items-start mb-3">
+                        <svg class="w-4 h-4 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 384 512"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67a24 24 0 01-35.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
+                        <span>[Your Address], Bengaluru, KA</span>
+                    </p>
+                    <p class="flex items-start mb-3">
+                        <svg class="w-4 h-4 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.2-46.1 11.7l-34.4 42.7c-52.1-26.2-92.5-66.6-118.7-118.7l42.7-34.4c13.9-11 18.5-29.8 11.7-46.1l-40-96z"/></svg>
+                        <span>+91 98765 43210</span>
+                    </p>
+                    <p class="flex items-start mb-3">
+                        <svg class="w-4 h-4 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0 26.5-21.5-48-48-48H48zM0 176v-0.7C14.2 190.9 31.3 208 48 208h416c16.7 0 33.8-17.1 48-32.7V176c-11.3 12.8-25 24-40 32H88c-15 0-28.7-11.2-40-32zM48 368h416V240c-11.3 12.8-25 24-40 32H88c-15 0-28.7-11.2-40-32v128z"/></svg>
+                        <span>info@medhasya.com</span>
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="Facebook">
+                           <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3l-.5 3h-2.5v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="Instagram">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.7 2 8.3 2.02 7.1 2.07c-1.2.05-2.02.27-2.73.55a4.9 4.9 0 00-1.74 1.15c-.6.6-1 1.25-1.15 1.74-.28.7-.5 1.53-.55 2.73C2.02 8.3 2 8.7 2 12s.02 3.7.07 4.9c.05 1.2.27 2.02.55 2.73.15.48.37.9.6 1.3a4.9 4.9 0 001.15 1.74c.6.6 1.25 1 1.74 1.15.7.28 1.53.5 2.73.55 1.2.05 1.6.07 4.9.07s3.7-.02 4.9-.07c1.2-.05 2.02-.27 2.73-.55.48-.15.9-.37 1.3-.6a4.9 4.9 0 001.74-1.15c.6-.6 1-1.25 1.15-1.74.28-.7.5-1.53.55-2.73.05-1.2.07-1.6.07-4.9s-.02-3.7-.07-4.9c-.05-1.2-.27-2.02-.55-2.73a4.9 4.9 0 00-1.74-1.15c-.6-.6-1.25-1-1.74-1.15-.7-.28-1.53-.5-2.73-.55C15.7 2.02 15.3 2 12 2zm0 3c3.6 0 3.63 0 4.9.07 1.1.05 1.7.22 2.05.35.45.17.75.37 1.1.7.37.37.58.65.7 1.1.13.35.3.95.35 2.05.07 1.27.07 1.3.07 4.9s0 3.63-.07 4.9c-.05 1.1-.22 1.7-.35 2.05-.17.45-.37.75-.7 1.1-.37.37-.65.58-1.1.7-.35.13-.95.3-2.05.35-1.27.07-1.3.07-4.9.07s-3.63 0-4.9-.07c-1.1-.05-1.7-.22-2.05-.35-.45-.17-.75-.37-1.1-.7-.37.37-.58.65-.7-1.1-.13.35-.3-.95-.35-2.05C3.02 15.63 3 15.3 3 12s0-3.63.07-4.9c.05-1.1.22 1.7.35-2.05.17-.45.37.75.7-1.1.37.37.65.58 1.1-.7.35-.13.95.3-2.05-.35C8.37 5.02 8.7 5 12 5zm0 2.25a4.75 4.75 0 100 9.5 4.75 4.75 0 000-9.5zM12 15a3 3 0 110-6 3 3 0 010 6zm6.5-7.75a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="LinkedIn">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zm-8 15v-7H8v7h3zm-1.5-8.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM18 18v-4.5c0-2-1-3.5-3.5-3.5a3.5 3.5 0 00-3.5 3.5V18h3v-4.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5V18h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Our Courses -->
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-6">Our Courses</h3>
+                    <nav class="flex flex-col space-y-3">
+                        <a href="courses.html" class="flex items-center hover:text-white transition-colors">
+                            <svg class="w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 192 512"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128 128c7.81 7.81 7.81 20.474 0 28.284l-128 128C21.543 411.404 0 402.48 0 384.662z"/></svg>
+                            <span>Class 8-10 (Foundation)</span>
+                        </a>
+                        <a href="courses.html" class="flex items-center hover:text-white transition-colors">
+                            <svg class="w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 192 512"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128 128c7.81 7.81 7.81 20.474 0 28.284l-128 128C21.543 411.404 0 402.48 0 384.662z"/></svg>
+                            <span>Class 11 (Science)</span>
+                        </a>
+                        <a href="courses.html" class="flex items-center hover:text-white transition-colors">
+                            <svg class="w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 192 512"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128 128c7.81 7.81 7.81 20.474 0 28.284l-128 128C21.543 411.404 0 402.48 0 384.662z"/></svg>
+                            <span>Class 12 (Science)</span>
+                        </a>
+                        <a href="courses.html" class="flex items-center hover:text-white transition-colors">
+                            <svg class="w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 192 512"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128 128c7.81 7.81 7.81 20.474 0 28.284l-128 128C21.543 411.404 0 402.48 0 384.662z"/></svg>
+                            <span>Commerce (11 & 12)</span>
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- Column 3: Quick Links -->
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-6">Quick Links</h3>
+                    <nav class="flex flex-col space-y-3">
+                        <a href="index.html" class="flex items-center hover:text-white transition-colors">
+                            <svg class="w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 192 512"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128 128c7.81 7.81 7.81 20.474 0 28.284l-128 128C21.543 411.404 0 402.48 0 384.662z"/></svg>
+                            <span>Home</span>
+                        </a>
+                        <a href="about.html" class="flex items-center hover:text-white transition-colors">
+                            <svg class="w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 192 512"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128 128c7.81 7.81 7.81 20.474 0 28.284l-128 128C21.543 411.404 0 402.48 0 384.662z"/></svg>
+                            <span>About Us</span>
+                        </a>
+                        <a href="faculty.html" class="flex items-center hover:text-white transition-colors">
+                            <svg class="w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 192 512"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128 128c7.81 7.81 7.81 20.474 0 28.284l-128 128C21.543 411.404 0 402.48 0 384.662z"/></svg>
+                            <span>Our Faculty</span>
+                        </a>
+                        <a href="contact.html" class="flex items-center hover:text-white transition-colors">
+                            <svg class="w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 192 512"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128 128c7.81 7.81 7.81 20.474 0 28.284l-128 128C21.543 411.404 0 402.48 0 384.662z"/></svg>
+                            <span>Contact</span>
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- Column 4: Office Hours -->
+                <div>
+                    <h3 class="text-white text-xl font-semibold mb-6">Office Hours</h3>
+                    <p class="mb-3">Mon - Fri: 09:00 AM - 06:00 PM</p>
+                    <p class="mb-3">Saturday: 10:00 AM - 04:00 PM</p>
+                    <p class="mb-5">Sunday: Closed</p>
+                    
+                    <!-- Live Clock -->
+                    <div class="flex items-center space-x-3">
+                        <div id="live-indicator" class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <span id="live-clock" class="text-white">Loading...</span>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Copyright Bar -->
+            <div class="border-t border-white/10 pt-8 mt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center text-center">
+                    <p>&copy; 2025 Medhasya Academy. All rights reserved.</p>
+                    <p>Designed with ❤️ in Bengaluru</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#top" class="fixed bottom-6 right-6 bg-brand-blue text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-700 transition-colors z-50">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+        </svg>
+    </a>
+
+    <!-- JS for Mobile Menu & Live Clock -->
+    <script>
+        // Mobile Menu
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Live Clock
+        function updateClock() {
+            const clockElement = document.getElementById('live-clock');
+            const indicatorElement = document.getElementById('live-indicator');
+            
+            const options = { timeZone: 'Asia/Kolkata', weekday: 'long', hour: 'numeric', minute: 'numeric', hour12: true };
+            const formatter = new Intl.DateTimeFormat('en-US', options);
+            const parts = formatter.formatToParts(new Date());
+
+            let day = '', hour = '', minute = '', dayPeriod = '';
+            parts.forEach(part => {
+                if (part.type === 'weekday') day = part.value;
+                if (part.type === 'hour') hour = part.value;
+                if (part.type === 'minute') minute = part.value;
+                if (part.type === 'dayPeriod') dayPeriod = part.value;
+            });
+
+            clockElement.textContent = `${day}, ${hour}:${minute} ${dayPeriod} (IST)`;
+
+            // Check Office Hours (IST)
+            const now = new Date(new Date().toLocaleString("en-US", {timeZone: "Asia/Kolkata"}));
+            const currentDay = now.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+            const currentHour = now.getHours(); // 0 - 23
+
+            let isOpen = false;
+            if (currentDay >= 1 && currentDay <= 5) { // Mon - Fri
+                if (currentHour >= 9 && currentHour < 18) isOpen = true; // 9:00 AM - 5:59 PM
+            } else if (currentDay === 6) { // Saturday
+                if (currentHour >= 10 && currentHour < 16) isOpen = true; // 10:00 AM - 3:59 PM
+            }
+
+            if (isOpen) {
+                indicatorElement.classList.remove('bg-red-500');
+                indicatorElement.classList.add('bg-green-400', 'animate-pulse');
+            } else {
+                indicatorElement.classList.add('bg-red-500');
+                indicatorElement.classList.remove('bg-green-400', 'animate-pulse');
+            }
+        }
+
+        updateClock();
+        setInterval(updateClock, 60000); // Update every minute
+    </script>
+
+</body>
+</html>

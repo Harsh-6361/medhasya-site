@@ -1,0 +1,27 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html {
+    /* This makes the scroll-to-top button glide smoothly */
+    scroll-behavior: smooth;
+}
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: #ffffff;
+    /* Subtle background pattern from your template example */
+    background-image: 
+        radial-gradient(circle at 100% 0, rgba(15, 118, 255, 0.04) 0%, rgba(15, 118, 255, 0.04) 50%, transparent 50%),
+        radial-gradient(circle at 0 100%, rgba(15, 118, 255, 0.04) 0%, rgba(15, 118, 255, 0.04) 50%, transparent 50%);
+    background-size: 50px 50px;
+}
+
+/* Custom class for the horizontal scroll container */
+.testimonial-scroll-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.testimonial-scroll-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
