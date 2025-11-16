@@ -16,12 +16,48 @@ body {
     background-size: 50px 50px;
 }
 
-/* Custom class for the horizontal scroll container */
-.testimonial-scroll-container {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+/* --- NEW: Marquee Banner Animation --- */
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); } /* Stop at 50% to loop smoothly */
 }
 
-.testimonial-scroll-container::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+.marquee-content {
+    /* Each child is 25%, so 4 children = 100%. We duplicate for the loop */
+    width: 200%; 
+    animation: marquee 30s linear infinite;
+    /* Duplicate the content */
+    display: flex;
+}
+.marquee-content:hover {
+    animation-play-state: paused; /* Pause on hover */
+}
+.marquee-content span {
+    width: 25%; /* Each item takes up a quarter of the duplicated content */
+}
+
+/* --- NEW: Testimonial Slider Styles --- */
+.testimonial-slide {
+    display: none;
+    animation: fadeIn 0.6s ease-in-out;
+}
+.testimonial-slide.active-slide {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* --- NEW: Scroll Animation Styles --- */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
