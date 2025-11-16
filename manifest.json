@@ -1,0 +1,23 @@
+{
+  "name": "Medhasya Academy",
+  "short_name": "Medhasya",
+  "description": "Meaningful, interactive, and growth-driven learning for classes 8-12.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#2563EB",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://placehold.co/192x192/2563EB/FFFFFF.png?text=MA",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://placehold.co/512x512/2563EB/FFFFFF.png?text=MA",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
+
